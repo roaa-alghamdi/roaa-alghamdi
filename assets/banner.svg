@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b111b"/>
+      <stop offset="1" stop-color="#131d2e"/>
+    </linearGradient>
+    <linearGradient id="dune" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2b5ea8" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#e2b467" stop-opacity="0.55"/>
+    </linearGradient>
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#3a5f95" opacity="0.35"/>
+    </pattern>
+    <style>
+      .name{font:700 54px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#ece8e0}
+      .role{font:600 22px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#e2b467}
+      .sub{font:400 17px 'Segoe UI',Helvetica,Arial,sans-serif;fill:#9aa4b2}
+      .mono{font:500 13px Consolas,'Courier New',monospace;fill:#e2b467;letter-spacing:1px}
+      @keyframes rise{from{transform:scaleY(0.2)}to{transform:scaleY(1)}}
+      @keyframes draw{from{stroke-dashoffset:520}to{stroke-dashoffset:0}}
+      .bar{transform-box:fill-box;transform-origin:bottom;animation:rise 1.2s ease-out both}
+      .trend{stroke-dasharray:520;animation:draw 2s .6s ease-out both}
+    </style>
+  </defs>
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="18" fill="url(#dots)"/>
+  <path d="M0 250 C 180 205, 330 270, 520 232 S 860 190, 1010 228 S 1150 250, 1200 236 L1200 300 L0 300 Z" fill="url(#dune)" opacity="0.5"/>
+  <path d="M0 272 C 220 240, 380 292, 600 262 S 950 236, 1200 266 L1200 300 L0 300 Z" fill="#e2b467" opacity="0.10"/>
+
+  <text x="60" y="78" class="mono">TABUK, SAUDI ARABIA  ·  OPEN TO CO-OP &amp; JUNIOR ROLES</text>
+  <text x="60" y="140" class="name">Roaa Alghamdi</text>
+  <text x="60" y="180" class="role">Data &amp; BI Analyst  ·  Odoo ERP  ·  Decision Support</text>
+  <text x="60" y="214" class="sub">Power BI · DAX · Excel · SQL · Python  |  turning business questions into dashboards</text>
+
+  <g transform="translate(840,62)">
+    <rect x="0" y="0" width="300" height="170" rx="12" fill="#101826" stroke="#223047"/>
+    <text x="16" y="26" style="font:600 12px 'Segoe UI',Arial,sans-serif;fill:#9aa4b2">Net sales vs target</text>
+    <g fill="#3a7bd5">
+      <rect class="bar" style="animation-delay:.05s" x="22"  y="104" width="24" height="46" rx="3"/>
+      <rect class="bar" style="animation-delay:.15s" x="56"  y="90"  width="24" height="60" rx="3"/>
+      <rect class="bar" style="animation-delay:.25s" x="90"  y="98"  width="24" height="52" rx="3"/>
+      <rect class="bar" style="animation-delay:.35s" x="124" y="74"  width="24" height="76" rx="3"/>
+      <rect class="bar" style="animation-delay:.45s" x="158" y="84"  width="24" height="66" rx="3"/>
+      <rect class="bar" style="animation-delay:.55s" x="192" y="62"  width="24" height="88" rx="3"/>
+      <rect class="bar" style="animation-delay:.65s" x="226" y="70"  width="24" height="80" rx="3"/>
+    </g>
+    <rect class="bar" style="animation-delay:.75s" x="260" y="46" width="24" height="104" rx="3" fill="#e2b467"/>
+    <polyline class="trend" points="34,92 68,78 102,86 136,62 170,72 204,50 238,58 272,34" fill="none" stroke="#e2b467" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="16" y1="150" x2="290" y2="150" stroke="#223047"/>
+  </g>
+</svg>
